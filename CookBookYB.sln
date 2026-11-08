@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO-Library", "DTO-Library\DTO-Library.csproj", "{8CDACD01-8B10-44D5-B8C3-EE35E5D22157}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSCookBook", "WSCookBook\WSCookBook.csproj", "{1C2A1362-5390-471C-B79A-88F3A8993576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BE291D65-5FBD-4618-BAC0-CB7282F5354E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1C2A1362-5390-471C-B79A-88F3A8993576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C2A1362-5390-471C-B79A-88F3A8993576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C2A1362-5390-471C-B79A-88F3A8993576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE291D65-5FBD-4618-BAC0-CB7282F5354E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE291D65-5FBD-4618-BAC0-CB7282F5354E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE291D65-5FBD-4618-BAC0-CB7282F5354E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE291D65-5FBD-4618-BAC0-CB7282F5354E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

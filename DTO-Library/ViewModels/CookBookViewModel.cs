@@ -6,15 +6,15 @@ namespace DTO_Library.ViewModels
 {
     public class CookBookViewModel
     {
-        public List<RecipeCatagories> RecipeCatagories { get; set; }
+        public List<Catagories> RecipeCatagories { get; set; }
         public List<Recipes> Recipes { get; set; }
 
         public CookBookViewModel()
         {
-            RecipeCatagories = new List<RecipeCatagories>();
+            RecipeCatagories = new List<Catagories>();
             Recipes = new List<Recipes>();
         }
-        public void AddRecipeCatagory(RecipeCatagories recipeCatagory)
+        public void AddRecipeCatagory(Catagories recipeCatagory)
         {
             if (recipeCatagory != null)
             {
@@ -28,7 +28,7 @@ namespace DTO_Library.ViewModels
                 Recipes.Add(recipe);
             }
         }
-        public RecipeCatagories GetRecipeCatagory(int index)
+        public Catagories GetRecipeCatagory(int index)
         {
             if (index >= 0 && index < RecipeCatagories.Count)
             {

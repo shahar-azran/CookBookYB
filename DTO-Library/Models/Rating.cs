@@ -7,7 +7,7 @@ namespace DTO_Library.Models
     {
         public int RatingID { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         public int RecipeId { get; set; }
 
@@ -20,7 +20,7 @@ namespace DTO_Library.Models
 
         public Rating() { }
 
-        public Rating(int ratingID, int userId, int recipeId, int score, string comment)
+        public Rating(int ratingID, string userId, int recipeId, int score, string comment)
         {
             RatingID = ratingID;
             UserId = userId;

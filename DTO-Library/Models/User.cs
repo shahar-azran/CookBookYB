@@ -6,7 +6,7 @@ namespace DTO_Library.Models
 {
     public class User
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         [Required(ErrorMessage = "Username is required.")]
         [StringLength(30, MinimumLength = 2, ErrorMessage = "Username must be between 2 and 30 characters.")]
@@ -21,18 +21,14 @@ namespace DTO_Library.Models
         [StringLength(100, MinimumLength = 6, ErrorMessage = "Password must be at least 6 characters long.")]
         public string UserPassword { get; set; }
 
-        [Phone(ErrorMessage = "Invalid phone number.")]
-        public string UserTel { get; set; }
-
         public User() { }
 
-        public User(int userId, string userName, string userEmail, string userPassword, string userTel)
+        public User(string userId, string userName, string userEmail, string userPassword)
         {
             UserId = userId;
             UserName = userName;
             UserEmail = userEmail;
             UserPassword = userPassword;
-            UserTel = userTel;
         }
     }
 }

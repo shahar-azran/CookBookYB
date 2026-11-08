@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DTO_Library.Models
 {
-    public class RecipeCatagories
+    public class Catagories
     {
         public int CatId { get; set; }
 
@@ -11,9 +11,9 @@ namespace DTO_Library.Models
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Category name must be between 2 and 50 characters.")]
         public string CatagoryName { get; set; }
 
-        public RecipeCatagories() { }
+        public Catagories() { }
 
-        public RecipeCatagories(int catId, string catagoryName)
+        public Catagories(int catId, string catagoryName)
         {
             CatId = catId;
             CatagoryName = catagoryName;

@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DTO-Library\DTO-Library.csproj" />
   </ItemGroup>
 
 </Project>

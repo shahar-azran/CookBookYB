@@ -9,13 +9,13 @@ namespace DTO_Library.ViewModels
         public Recipes Recipe { get; set; }
         public string CategoryName { get; set; }
         public string AuthorName { get; set; }
-        public List<RecipeIngredient> Ingredients { get; set; }
+        public List<Ingredient> Ingredients { get; set; }
         public List<Rating> Ratings { get; set; }
         public double AverageScore { get; set; }
 
         public RecipeDetailsViewModel()
         {
-            Ingredients = new List<RecipeIngredient>();
+            Ingredients = new List<Ingredient>();
             Ratings = new List<Rating>();
         }
     }

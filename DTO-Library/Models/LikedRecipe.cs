@@ -8,14 +8,14 @@ namespace DTO_Library.Models
         public int LikeId { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         [Required]
         public int RecipeId { get; set; }
 
         public LikedRecipe() { }
 
-        public LikedRecipe(int likeId, int userId, int recipeId)
+        public LikedRecipe(int likeId, string userId, int recipeId)
         {
             LikeId = likeId;
             UserId = userId;

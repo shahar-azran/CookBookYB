@@ -7,15 +7,15 @@ namespace DTO_Library.ViewModels
     public class CreateRecipeViewModel
     {
         public Recipes Recipe { get; set; }
-        public List<RecipeIngredient> Ingredients { get; set; }
-        public List<RecipeCatagories> AvailableCategories { get; set; }
+        public List<Ingredient> Ingredients { get; set; }
+        public List<Catagories> AvailableCategories { get; set; }
         public List<Unit> AvailableUnits { get; set; }
 
         public CreateRecipeViewModel()
         {
             Recipe = new Recipes();
-            Ingredients = new List<RecipeIngredient>();
-            AvailableCategories = new List<RecipeCatagories>();
+            Ingredients = new List<Ingredient>();
+            AvailableCategories = new List<Catagories>();
             AvailableUnits = new List<Unit>();
         }
     }

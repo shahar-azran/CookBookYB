@@ -8,7 +8,7 @@ namespace DTO_Library.Models
     {
         public int RecipeId { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         public int CatId { get; set; }
 
@@ -27,7 +27,7 @@ namespace DTO_Library.Models
 
         public Recipes() { }
 
-        public Recipes(int recipeId, int userId, int catId, string recipesName, string preperationMethod, string dishPhoto)
+        public Recipes(int recipeId, string userId, int catId, string recipesName, string preperationMethod, string dishPhoto)
         {
             RecipeId = recipeId;
             UserId = userId;
