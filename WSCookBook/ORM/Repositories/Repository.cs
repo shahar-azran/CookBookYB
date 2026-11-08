@@ -2,7 +2,7 @@
 using WSCookBook;
 using DTO_Library.Models;
 using WSCookBook.ORM.ModelCreator;
-namespace WSCookBook.ORM
+namespace WSCookBook.ORM.Repositories
 {
     public class Repository
     {

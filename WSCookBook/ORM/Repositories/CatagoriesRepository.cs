@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using WSCookBook.ORM.ModelCreator;
-namespace WSCookBook.ORM
+using WSCookBook.ORM.Repositories;
+namespace WSCookBook.ORM.Repositories
 {
     public class CatagoriesRepository : Repository, I_Repository<Catagories>
     {

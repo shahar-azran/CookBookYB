@@ -1,4 +1,4 @@
-﻿namespace WSCookBook.ORM.Repository
+﻿namespace WSCookBook.ORM.Repositories
 {
     public class UOWRepository
     {

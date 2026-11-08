@@ -4,15 +4,20 @@ using DTO_Library.Models;
 
 namespace DTO_Library.ViewModels
 {
-    public class CookBookViewModel
+    public class AllRecipesViewModel
     {
         public List<Catagories> RecipeCatagories { get; set; }
         public List<Recipes> Recipes { get; set; }
+        public int currentCatId { get; set; }
+        public int Page { get; set; }
+        public int recipesPerPage { get; set; }
+        public int PageCount { get; set; }
 
-        public CookBookViewModel()
+        public AllRecipesViewModel()
         {
             RecipeCatagories = new List<Catagories>();
             Recipes = new List<Recipes>();
+            currentCatId = 0;
         }
         public void AddRecipeCatagory(Catagories recipeCatagory)
         {

@@ -3,10 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using WSCookBook.ORM.ModelCreator;
-namespace WSCookBook.ORM
+namespace WSCookBook.ORM.Repositories
 {
     public class RecipeRepository : Repository, I_Repository<Recipes>
     {
+        int allRecipes;
+
+        public int AllRecipes
+        {
+            get { return allRecipes; }
+        }
         public RecipeRepository(DBContext dBContext, UOWModelCreator modelCreator) : base(dBContext, modelCreator)
         {
         }
@@ -65,6 +71,13 @@ namespace WSCookBook.ORM
             this.dBContext.AddParameter("@PreperationMethod", item.PreperationMethod);
             this.dBContext.AddParameter("@DishPhoto", item.DishPhoto);
             return this.dBContext.ChangeData(sql) > 0;
+        }
+
+        internal List<Recipes> GetRecipeByPage(int page, int recipesPerPage)
+        {
+            List<Recipes> recipes = this.SelectAll();
+            this.allRecipes = recipes.Count;
+            return recipes.Skip<Recipes>((page - 1) * recipesPerPage).Take(recipesPerPage).ToList<Recipes>();
         }
     }
 }
